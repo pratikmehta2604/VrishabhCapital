@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - Vrishabh Capital Advisors LLP</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Add specific styles for disclaimer page if needed */
+        body { padding-top: 100px; background-color: #f9f9f9;} /* Add padding for fixed header */
+        .disclaimer-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            line-height: 1.7;
+        }
+        .disclaimer-content h1 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="images/Full-removebg-preview.png" 
+                    alt="Stylized gold bull head to the left of Vrishabh Capital in bold blue text on a transparent background, conveying strength and professionalism" 
+                    class="logo" 
+                    style="height: 240px; width: auto; max-width: 100%; margin-top: -60px; margin-bottom: -60px;">
+            </a>
+            <ul class="nav-links">
+                 <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#services">What We Do</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container section-padding">
+        <article class="disclaimer-content">
+            <h1>Disclaimer</h1>
+            <p><strong></strong></p>
+            
+            <p>The information provided on this website, Vrishabh Capital Advisors LLP ("the Company"), is for general informational purposes only. All information on the site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.</p>
+            
+            <p>Investing in stock markets, derivatives, and other financial instruments involves a substantial risk of loss and is not suitable for every investor. The valuation of financial instruments may fluctuate, and as a result, clients may lose more than their original investment. Past performance is not indicative of future results.</p>
+            
+            <p>The content on this website is not intended to be a substitute for professional financial advice. Always seek the advice of a qualified financial advisor with any questions you may have regarding your investment objectives, financial situation, and particular needs.</p>
+            
+            <p>Vrishabh Capital Advisors LLP is not SEBI Registred. We do not provide any financial advice.</p>
+
+            <p>Vrishabh Capital Advisors LLP is involved in proprietary trading.</p>
+            
+            <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.</p>
+            
+            <p>This website may contain links to other websites or content belonging to or originating from third parties or links to websites and features. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+
+            <a href="index.html" class="home-link">Return to Homepage</a>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year-disclaimer"></span> Vrishabh Capital Advisors LLP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Nav Toggle (copied from index.html for consistency if user lands here directly)
+        const navToggleDisclaimer = document.querySelector('.nav-toggle');
+        const navLinksDisclaimer = document.querySelector('.nav-links');
+        if (navToggleDisclaimer) {
+            navToggleDisclaimer.addEventListener('click', () => {
+                navLinksDisclaimer.classList.toggle('nav-active');
+                navToggleDisclaimer.classList.toggle('toggle');
+            });
+        }
+         // Set current year in footer
+        const yearSpanDisclaimer = document.getElementById('current-year-disclaimer');
+        if (yearSpanDisclaimer) {
+            yearSpanDisclaimer.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
