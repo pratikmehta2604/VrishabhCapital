@@ -475,6 +475,7 @@ img {
     }
 
     .nav-links {
+        display: none; /* Hide by default on mobile */
         position: fixed;
         top: 80px; /* Match header height */
         left: 0;
@@ -484,10 +485,12 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(-100%); /* Slide from left */
-        transition: transform 0.3s ease-in-out;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         z-index: 999;
+    }
+
+    .nav-links.nav-active {
+        display: flex; /* Show when active */
     }
     .nav-links.nav-active {
         transform: translateX(0);
